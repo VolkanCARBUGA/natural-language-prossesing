@@ -1,0 +1,65 @@
+# Doğal Dil İşleme Projesi - Gerekli Kütüphaneler
+
+# METİN ANALİZİ VE TEMİZLEME
+textblob==0.19.0        # Basit metin analizi ve yazım düzeltme kütüphanesi
+beautifulsoup4==4.12.3  # HTML/XML ayrıştırma ve web scraping için
+nltk==3.9.1            # Kapsamlı doğal dil işleme araç takımı (tokenization, POS tagging, vs.)
+
+# GELİŞMİŞ NLP MODELLERİ
+spacy==3.8.7           # Endüstriyel NLP kütüphanesi (NER, dependency parsing)
+gensim==4.3.3          # Konu modelleme ve kelime vektörleri (Word2Vec, LDA)
+transformers==4.53.3   # Hugging Face - BERT, GPT gibi transformer modelleri
+
+# YAPAY ZEKA API ERİŞİMİ
+openai==1.30.5         # OpenAI GPT API client kütüphanesi
+
+# YARDIMCI ARAÇLAR
+tqdm==4.67.1           # İlerleme çubuğu gösterme (döngüler için)
+joblib==1.5.1          # Paralel işlem ve model serileştirme
+click==8.1.7           # Komut satırı arayüzü oluşturma
+regex==2024.11.6       # Gelişmiş düzenli ifade desteği
+
+# MAKİNE ÖĞRENMESİ
+scikit-learn==1.5.2    # ML algoritmaları ve veri ön işleme (CountVectorizer, TF-IDF, vs.)
+torch==2.5.1          # PyTorch - ML ve DL için
+
+"""
+KÜTÜPHANE AÇIKLAMALARI VE KULLANIM ALANLARI:
+
+TEMEL NLP KÜTÜPHANELER:
+- NLTK: Akademik amaçlı, tokenization, POS tagging, parsing
+- spaCy: Endüstriyel kullanım, hızlı ve doğru, pipeline mimarisi
+- TextBlob: Basit metin işleme, başlangıç seviyesi projeler için
+
+METİN VEKTÖRLEŞTİRME:
+- scikit-learn: CountVectorizer, TF-IDF, klasik yöntemler
+- gensim: Word2Vec, Doc2Vec, FastText, modern embedding yöntemleri
+- transformers: BERT, RoBERTa, GPT gibi context-aware embeddings
+
+WEB VE VERİ TEMİZLEME:
+- BeautifulSoup: HTML temizleme, web scraping
+- regex: Karmaşık metin desenleri, gelişmiş temizleme
+- textblob: Basit yazım düzeltme
+
+PERFORMANS VE KULLANICILIK:
+- tqdm: Uzun işlemlerde ilerleme takibi
+- joblib: Model kaydetme/yükleme, paralel işlem
+- click: Kullanıcı dostu komut satırı araçları
+
+MODERN AI ENTEGRASYONU:
+- openai: ChatGPT, GPT-4 API erişimi
+- transformers: En son AI modelleri
+
+KURULUM ÖNERİSİ:
+1. Sanal ortam oluştur: python -m venv nlp_env
+2. Sanal ortamı aktifleştir: source nlp_env/bin/activate (Linux/Mac)
+3. Kütüphaneleri kur: pip install -r requirements.txt
+4. NLTK verileri indir: python -c "import nltk; nltk.download('all')"
+5. spaCy dil modeli: python -m spacy download en_core_web_sm
+
+DİKKAT EDİLECEKLER:
+- transformers kütüphanesi büyük boyutlu (>1GB)
+- GPU kullanımı için torch+CUDA gerekebilir
+- openai kullanımı için API key gerekli
+- Bazı kütüphaneler sistem bağımlılıkları gerektirebilir
+"""
