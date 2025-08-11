@@ -1,0 +1,42 @@
+# API Anahtarları ve Hassas Bilgiler
+*.env
+.env
+.env.local
+.env.production
+config.py
+secrets.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# API Keys
+*api_key*
+*API_KEY*
