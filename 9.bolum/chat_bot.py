@@ -34,7 +34,7 @@ import os
 # API anahtarınızı environment variable olarak ayarlayın: export OPENAI_API_KEY="your-key-here"
 # Güvenlik için API anahtarını kodda sabit olarak yazmayın
 # OpenAI API istemcisini oluşturma (API anahtarı ile)
-#client = OpenAI(api_key="api key")
+client = OpenAI(api_key="api key")
 
 # Chatbot ile konuşma fonksiyonu - kullanıcı girdisini alır ve OpenAI API'sinden cevap döner
 def chat_with_bot(prompt, history_list):
